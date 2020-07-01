@@ -1,0 +1,65 @@
+﻿@model WebApplication_AlquilerEquipos.Models.Equipo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+    <div>
+        <h4><strong>Eliminar Equipo</strong></h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Codigo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Codigo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Descripcion)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Costo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Costo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Estado.Nombre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Estado.Nombre)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input id="Equipo_btn_Eliminar" type="submit" value="Eliminar" class="btn btn-danger" />
+            </div>
+        }
+        <br />
+        <div>
+            @Html.ActionLink("Cancelar", "Index", null, htmlAttributes: new { @id = "Equipo_btn_Cancelar" })
+        </div>
+    </div>

@@ -1,0 +1,37 @@
+﻿@model WebApplication_AlquilerEquipos.Models.Usuario
+@using WebApplication_AlquilerEquipos.Models;
+@using WebApplication_AlquilerEquipos.Controllers;
+
+@{
+    AlquilerEntities db = new AlquilerEntities();
+    Usuario user = db.Usuario.Where(s => s.NombreUsuario == AccountController.StaticNameUser).FirstOrDefault<Usuario>();
+}
+
+<div>
+    <h4><strong>Mi Perfil</strong></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreUsuario)
+        </dd>
+
+    
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar Perfil", "Edit", new { id = user.Id }, htmlAttributes: new { @id="Usuario_btn_Editar", @class = "btn btn-primary" })
+</p>
+<br />

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b2209da7e26e4eea896d6c6762f02331" Name="Diagram1">
+        <EntityTypeShape EntityType="AlquilerEquiposModel.Alquiler" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlquilerEquiposModel.AlquilerDetalle" Width="1.5" PointX="7.5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlquilerEquiposModel.Cargo" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlquilerEquiposModel.Cliente" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlquilerEquiposModel.Equipo" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlquilerEquiposModel.Estado" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlquilerEquiposModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlquilerEquiposModel.TipoDocumento" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlquilerEquiposModel.Usuario" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <AssociationConnector Association="AlquilerEquiposModel.Alquiler_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="AlquilerEquiposModel.Alquiler_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="AlquilerEquiposModel.AlquilerDetalle_Alquiler" ManuallyRouted="false" />
+        <AssociationConnector Association="AlquilerEquiposModel.AlquilerDetalle_Equipo" ManuallyRouted="false" />
+        <AssociationConnector Association="AlquilerEquiposModel.Usuario_Cargo" ManuallyRouted="false" />
+        <AssociationConnector Association="AlquilerEquiposModel.Cliente_TipoDocumento" ManuallyRouted="false" />
+        <AssociationConnector Association="AlquilerEquiposModel.Equipo_Estado" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
